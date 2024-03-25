@@ -1,4 +1,4 @@
-return {
+return {v
     "nvim-telescope/telescope.nvim",
 
     tag = "0.1.x",
