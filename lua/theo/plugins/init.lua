@@ -8,6 +8,5 @@ return {
 		end
 	},
     "nvim-lua/plenary.nvim",
-    "mbbill/undotree",
     "folke/zen-mode.nvim",
 }
