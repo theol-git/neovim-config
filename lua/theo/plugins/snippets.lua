@@ -1,13 +1,12 @@
 return {
     "L3MON4D3/LuaSnip",
-    version = "v2.*",
-    build = "make install_jsregexp",
 
-    dependencies = { },
+    version = "v2.*",
+
+    build = "make install_jsregexp",
 
     config = function ()
         local ls = require("luasnip")
-        ls.filetype_extend("javascript", { "jsdoc" })
 
         require("luasnip.loaders.from_lua").lazy_load()
 
