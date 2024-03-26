@@ -11,6 +11,7 @@ return {
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
         "j-hui/fidget.nvim",
+        "Exafunction/codeium.nvim",
     },
     config = function()
         local cmp = require("cmp")
@@ -73,7 +74,11 @@ return {
                 { name = "luasnip" },
             }, {
                     { name = "buffer" },
-                })
+                    { name = "codeium" },
+                }),
+            experimental = {
+                ghost_text = true
+            }
         })
 
         vim.diagnostic.config({
