@@ -1,4 +1,4 @@
 return {
-    "nvim-lua/plenary.nvim",
-    "folke/zen-mode.nvim",
+	"nvim-lua/plenary.nvim",
+	"folke/zen-mode.nvim",
 }
