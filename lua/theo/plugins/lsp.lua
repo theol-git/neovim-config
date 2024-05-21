@@ -32,9 +32,6 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
-					"rust_analyzer",
-					"gopls",
-					"ruff_lsp",
 				},
 				handlers = {
 					function(server_name)
