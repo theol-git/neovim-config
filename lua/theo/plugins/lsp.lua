@@ -1,9 +1,5 @@
 return {
     {
-        "folke/lazydev.nvim",
-        ft = "lua", -- only load on lua files
-    },
-    {
         "neovim/nvim-lspconfig",
         dependencies = {
             "williamboman/mason.nvim",
@@ -101,11 +97,6 @@ return {
                 }, {
                     { name = "buffer" },
                 }),
---[[
-                experimental = {
-                    ghost_text = true,
-                },
-]]--
             })
 
             vim.diagnostic.config({
@@ -119,6 +110,10 @@ return {
                 },
             })
         end,
+    },
+    {
+        "folke/lazydev.nvim",
+        ft = "lua", -- only load on lua files
     },
     --[[
     {
