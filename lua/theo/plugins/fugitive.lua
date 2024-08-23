@@ -25,6 +25,10 @@ return {
 					vim.cmd.Git("pull  --rebase")
 				end, opts)
 
+				vim.keymap.set("n", "<leader>r", function()
+					vim.cmd.Git("review")
+				end, opts)
+
 				-- NOTE: It allows me to easily set the branch i am pushing and any tracking
 				-- needed if i did not set the branch up correctly
 				vim.keymap.set("n", "<leader>t", ":Git push -u origin ", opts)
