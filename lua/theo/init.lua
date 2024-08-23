@@ -4,9 +4,8 @@ require("theo.remap")
 require("theo.lazy")
 
 local AutocmdGroup = vim.api.nvim_create_augroup('Autocmd', {})
-local autocmd = vim.api.nvim_create_autocmd
 
-autocmd('LspAttach', {
+vim.api.nvim_create_autocmd('LspAttach', {
     group = AutocmdGroup,
     callback = function(e)
         local opts = { buffer = e.buf }
